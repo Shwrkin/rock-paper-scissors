@@ -5,7 +5,7 @@ def rock_paper_scissors():
         guess = input("rock, paper or scissors? ")
         if guess == 'stop':
             break
-        if guess != 'rock' or guess != 'paper' or guess != 'scissors':
+        if guess != 'rock' and guess != 'paper' and guess != 'scissors':
             print('you must enter one of the choices')
             continue
         computer_guess = random.choice(['rock', 'paper', 'scissors'])
